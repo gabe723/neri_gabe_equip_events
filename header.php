@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><?php dynamic_title( $page ); ?></title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400" />
-  <link rel="stylesheet" href="normalize.css" type="text/css" />
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <link rel="stylesheet" href="lightbox.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
   <link rel="alternate" type="application/rss+xml" href="rss.php">
-  <link rel="icon" href="images/favicon.ico" type="image/png" />
+  <link rel="icon" type="image/png" href="images/favicon.ico" />
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.validate_t.js"></script>
   <script src="js/validTests.js"></script>
