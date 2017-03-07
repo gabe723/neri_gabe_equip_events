@@ -1,11 +1,16 @@
 //colors:
-$global_nav: rgba(73, 78, 159, 0.8);
-$utility_nav: rgba(67, 77, 85, 0.5);
-$search_field: rgba(0, 255, 255, 0.5);
+$accent1: rgba( 120, 120, 120, 0.8 );
+$accent2:rgba( 90, 117, 173, 0.8 );
+$accent3: rgba( 246, 246, 246, 0.5 );
+$accent4: rgba( 229, 229, 229, 0.5 );
+$grey: rgba( 229, 229, 229, 0.5 );
+$header: rgba( 38, 57, 96, 0.8 );
+$utility_nav: rgba( 67, 77, 85, 0.5 );
+$search_field: rgba( 0, 255, 255, 0.5 );
 $footer: #434d55;
-$header: #A4A7CF;
 $a: #4BCAFF;
 $borders: #3e69ac;
+
 
 html{
   box-sizing: border-box;
@@ -95,7 +100,7 @@ img{
 header{
   height: auto;
   width: auto;
-  background-color: rgba(46, 49, 146, .6);
+  background-color: $header;
   color: rgba(46, 49, 146, .6);
 }
 #logo-wrap{
@@ -258,9 +263,9 @@ label.error{
   padding: 0;
   border-width: 1;
   border-style: solid;
-  border-color: rgba(0, 255, 255, 0.5);
+  border-color: $accent1;
   border-radius: 10px;
-  background-color: rgba(0, 255, 255, 0.5);
+  background-color: $accent4;
 }
 #searchForm-field{
   width: 58%;
@@ -874,7 +879,7 @@ MEDIA QUERIES
   }
   #icon-cta{
     height: 330px;
-    background-color: #A4A7CF;
+    background-color: $accent2;
     padding: 3.5%;
   }
   #icon-cta h2{

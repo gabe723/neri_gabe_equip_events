@@ -16,17 +16,17 @@
   <script src="js/jquery.validate_t.js"></script>
   <script src="js/validTests.js"></script>
 </head>
-<body id="page-<?php echo $page; ?>" role="content" class="template-<?php echo $page; ?> header-menu-open cf">
+<body id="page-<?php echo $page; ?>" role="content" class="template-<?php echo $page; ?> header-menu-open">
   <div class="site-container">
     <div class="hero hero-<?php echo $page; ?>">
       <div class="header-wrap">
         <header id="pageHeader" role="header">
           <?php
-          if ( $_SESSION['user_id']) {
-            include ('logged-in-utility-nav.php');
-          }else{
-            include_once('utility-nav.php');
-          }
+          // if ( $_SESSION['user_id']) {
+          //   include ('logged-in-utility-nav.php');
+          // }else{
+          //   include_once('utility-nav.php');
+          // }
           ?>
           <a href="http://localhost/neri_gabe_equip_events/index.php" class="equip-events" title="Equip Events">
             <div id="logo-wrap">

@@ -91,7 +91,7 @@ img {
 header {
   height: auto;
   width: auto;
-  background-color: rgba(46, 49, 146, 0.6);
+  background-color: rgba(38, 57, 96, 0.8);
   color: rgba(46, 49, 146, 0.6); }
 
 #logo-wrap {
@@ -266,9 +266,9 @@ label.error {
   padding: 0;
   border-width: 1;
   border-style: solid;
-  border-color: rgba(0, 255, 255, 0.5);
+  border-color: rgba(120, 120, 120, 0.8);
   border-radius: 10px;
-  background-color: rgba(0, 255, 255, 0.5); }
+  background-color: rgba(229, 229, 229, 0.5); }
 
 #searchForm-field {
   width: 58%;
@@ -882,7 +882,7 @@ MEDIA QUERIES
 
   #icon-cta {
     height: 330px;
-    background-color: #A4A7CF;
+    background-color: rgba(90, 117, 173, 0.8);
     padding: 3.5%; }
 
   #icon-cta h2 {
