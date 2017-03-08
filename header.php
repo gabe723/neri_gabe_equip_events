@@ -1,3 +1,6 @@
+<?php
+security_check();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,20 +23,26 @@
   <div class="site-container">
     <div class="hero hero-<?php echo $page; ?>">
       <div class="header-wrap">
-        <header id="pageHeader" role="header">
+        <header id="page_header" role="header">
           <?php
-          // if ( $_SESSION['user_id']) {
-          //   include ('logged-in-utility-nav.php');
-          // }else{
-          //   include_once('utility-nav.php');
-          // }
+          if ( defined('USER_ID') ) {
+            include_once ('logged-in-utility-nav.php');
+          }else{
+            include_once ('utility-nav.php');
+          }
           ?>
           <a href="http://localhost/neri_gabe_equip_events/index.php" class="equip-events" title="Equip Events">
             <div id="logo-wrap">
               <h1>Equip Events</h1>
             </div></a>
-            <?php include_once 'global-nav.php'; ?>
-            <?php include_once 'mobile-nav.php'; ?>
+            <?php
+            if (  defined('USER_ID') ) {
+              include_once ('logged-in-global-nav.php');
+            }else{
+              include_once ('global-nav.php');
+            }
+            ?>
+            <?php include_once ('mobile-nav.php'); ?>
             <a id="menu-btn" href="#" onclick="openNav()"><span class="menu">menu</span><img class="menu-btn" src="images/menu_button.png" alt="Menu" /></a>
             <div class="cf"></div>
           </header>

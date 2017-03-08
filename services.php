@@ -7,7 +7,7 @@ include_once('functions.php');
 include_once('header.php');
 ?>
 <!-- Call to Action -->
-<section id="atf-<?php echo $page; ?>-cta1">
+<section id="atf_<?php echo $page; ?>_cta1">
 	<div class="cta">
 		<h2>services</h2>
 	</div>

@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
 $username = 'gn_equip_events';
-$password = '2XsNf5TSzEBc6YCR';
+$password = 'mMMbHqv6yJf8PqyB';
 $database = 'gabe_equip_events';
 //connect to database
 $db = new mysqli( $host, $username, $password, $database );

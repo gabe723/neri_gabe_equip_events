@@ -60,5 +60,22 @@
                   <a href="http://localhost/neri_gabe_equip_events/contact.php">contact</a>
                 </li>
               </ul>
+              <div class="utility-login-register-wrap">
+                <div class="login">
+                  <nav>
+                    <ul>
+                      <li class="utility-nav-li header-utility-nav-login"><a href="http://localhost/neri_gabe_equip_events/login.php">login </a><span>|</span></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="register">
+                  <nav>
+                    <ul>
+                      <li class="utility-nav-li header-utility-nav-register"><a href="http://localhost/neri_gabe_equip_events/register.php"> sign up</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
             </nav>
           </div>

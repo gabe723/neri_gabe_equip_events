@@ -7,20 +7,19 @@ include_once('functions.php');
 include_once('header.php');
 //extract and sanitize the keywords that the user is searching for
 ?>
-<main id="content">
-	<!-- Above the Fold -->
-	<section id="atf-<?php echo $page; ?>-cta1">
-		<h2>We Equip Events With <span>EVERYTHING!</span></h2>
-		<?php include('search-form.php'); ?>
-	</section>
-	<section id="icon-cta">
-		<h2>plan. equip. celebrate.</h2>
-		<div id="icon-wrap">
-			<a href="http://localhost/neri_gabe_equip_events/planning.php"><div class="icon-wrap"><img class="icon icon1" src="images/planning_icon.png" alt="Planning" /><p>plan</p></div></a>
-			<a href="http://localhost/neri_gabe_equip_events/products.php"><div class="icon-wrap"><img class="icon icon2" src="images/equipment_icon.png" alt="Equip" /><p>equip</p></div></a>
-			<a href="http://localhost/neri_gabe_equip_events/index.php#tmnls"><div class="icon-wrap"><img class="icon icon3" src="images/experience_icon.png" alt="Celebrate" /><p>celebrate</p></div></a>
-		</div>
-	</section>
+<!-- Above the Fold -->
+<section id="atf_<?php echo $page; ?>_cta1">
+	<h2>We Equip Events With <span>EVERYTHING!</span></h2>
+	<?php include('search-form.php'); ?>
+</section>
+<section id="icon-cta">
+	<h2>plan. equip. celebrate.</h2>
+	<div id="icon-wrap">
+		<a href="http://localhost/neri_gabe_equip_events/planning.php"><div class="icon-wrap"><img class="icon icon1" src="images/planning_icon.png" alt="Planning" /><p>plan</p></div></a>
+		<a href="http://localhost/neri_gabe_equip_events/products.php"><div class="icon-wrap"><img class="icon icon2" src="images/equipment_icon.png" alt="Equip" /><p>equip</p></div></a>
+		<a href="http://localhost/neri_gabe_equip_events/index.php#tmnls"><div class="icon-wrap"><img class="icon icon3" src="images/experience_icon.png" alt="Celebrate" /><p>celebrate</p></div></a>
+	</div>
+</section>
 </div>
 <main id="content" class="cf">
 	<!-- Call to Action -->
@@ -31,9 +30,9 @@ include_once('header.php');
 		</div>
 	</section>
 	<!-- Affiliates -->
-	<section id="affl">
+	<section id="affiliates">
 		<h2>Affiliates</h2>
-		<div id="affl-wrap">
+		<div id="aff_wrap">
 			<a href="http://promotionaldesigngroup.com"><div class="aff-wrap"><img class="aff aff1" src="images/aff1.jpg" alt="Promotional Design Group" /></div></a>
 			<a href="http://www.knightscatering.ie"><div class="aff-wrap"><img class="aff aff2" src="images/aff2.jpg" alt="Knights Catering" /></div></a>
 			<a href="http://elegantaffairscaterers.com"><div class="aff-wrap"><img class="aff aff3" src="images/aff3.jpg" alt="Elegant Affairs Catering and Design" /></div></a>
