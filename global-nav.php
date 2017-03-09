@@ -1,6 +1,6 @@
 <!-- Global Nav -->
 <div class="global-nav-wrap">
-  <nav id="globalNav" class="global-nav header-nav cf">
+  <nav id="global_nav" class="global-nav header-nav cf">
     <ul class="global-nav-ul">
       <li class="global-nav-li header-global-nav-home">
         <a href="http://localhost/neri_gabe_equip_events/index.php">home</a>

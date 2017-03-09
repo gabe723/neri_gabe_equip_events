@@ -27,8 +27,6 @@ security_check();
           <?php
           if ( defined('USER_ID') ) {
             include_once ('logged-in-utility-nav.php');
-          }else{
-            include_once ('utility-nav.php');
           }
           ?>
           <a href="http://localhost/neri_gabe_equip_events/index.php" class="equip-events" title="Equip Events">

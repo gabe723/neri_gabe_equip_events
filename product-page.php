@@ -1,7 +1,7 @@
 <?php
+require('db-config.php');
 $page = 'product-page';
 $product_id = $_GET['product_id'];
-require('db-config.php');
 //use _once on function definitions to prevent duplicates
 include_once('functions.php');
 //get the doctype and the header element
