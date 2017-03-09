@@ -54,10 +54,10 @@ include_once('header.php');
           <section class="<?php echo $page; ?>">
             <?php while( $row_product = $result_product->fetch_assoc() ){ ?>
               <article class="product-<?php echo $row_product['name']; ?>">
-                <a href="#" title="Structure 1"><img src="images/<?php echo $row_product['image']; ?>" alt="<?php echo $row_product['name']; ?>" /></a>
+                <a href="http://localhost/neri_gabe_equip_events/product-page.php?product_id=<?php echo $row_product['product_id']; ?>" title="Structure 1"><img src="images/<?php echo $row_product['image']; ?>" alt="<?php echo $row_product['name']; ?>" /></a>
                 <h3 class="product-description"><?php echo $row_product['name']; ?></h3>
                 <p><span class="price"><?php echo $row_product['price']; ?></span></p>
-                <p><a href="http://gabeneri.com/equipevents/quote.php" title="Add to List"><span class="add">Add to List</span></a></p>
+                <a href="http://localhost/neri_gabe_equip_events/user-order.php?product_id=<?php echo $row_product['product_id']; ?>&amp;action=add" class="add">add to list</a>
               </article>
               <?php }//end while ?>
             </section>

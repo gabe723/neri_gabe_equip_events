@@ -38,7 +38,7 @@
   </div>
   <a id="menu-btn-footer" href="#" onclick="openNav()"><img class="menu-btn-footer" src="images/menu_button.png" alt="Menu" /></a>
   <a href="http://localhost/neri_gabe_equip_events/sitemap.php"><p>Sitemap</p></a>
-  <small>&copy; 2017 Equip Events Inc. All Rights Reserved.</small>
+  <small>&copy; 2017 Equip Events Inc.</small>
 </footer>
 <!-- jQuery goes here -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>

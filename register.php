@@ -8,6 +8,7 @@ include_once('header.php');
 //begin register parser
 require('register-parser.php');
 ?>
+</div>
 <main id="content">
 	<section id="<?php echo $page; ?>">
 		<h1>Create an Account</h1>

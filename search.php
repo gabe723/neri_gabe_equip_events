@@ -12,6 +12,7 @@ $per_page = 10;
 //start on page 1
 $current_page = 1;
 ?>
+</div>
 <main id="content">
   <?php
   //get all the published posts that contain the keywords in their title or body

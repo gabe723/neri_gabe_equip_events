@@ -6,6 +6,7 @@ include_once('functions.php');
 //get the doctype and the header element
 include_once('header.php');
 ?>
+</div>
 <main id="content">
 	<section id="<?php echo $page; ?>">
 		<h2>Sitemap</h2>
