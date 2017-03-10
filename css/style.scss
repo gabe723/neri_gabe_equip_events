@@ -6,7 +6,7 @@ $accent4: rgba( 229, 229, 229, 0.5 );
 $logo_accent1: #A57FFF;
 $logo_accent2: #9E71FF;
 $grey: rgba( 229, 229, 229, 0.5 );
-$header: rgba( 38, 57, 96, 0.8 );
+$header: rgba( 255, 255, 255, 0.8 );
 $utility_nav: rgba( 67, 77, 85, 0.5 );
 $search_field: rgba( 0, 255, 255, 0.5 );
 $footer: #434d55;
@@ -62,19 +62,47 @@ body{
 }
 #page-about .hero, #page-contact .hero,
 #page-login .hero, #page-register .hero,
-#page-products .hero, #page-search .hero,
-#page-user-order .hero{
+#page-products .hero, #page-product-page .hero,
+#page-search .hero, #page-user-order .hero,
+#page-my-account .hero{
   background: none;
+  height: 100px;
 }
-a, .header-utility-nav-login span{
-  color: #4BCAFF;
-  text-decoration: none;
+a{
+  color: #fff;
 }
 a:hover{
+  color: #888;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+nav a:hover{
+  color: #888;
+}
+footer a{
+  color: #fff;
+}
+.back-to-top{
   color: #000;
 }
-nav a:hover, footer a:hover{
+.back-to-top:hover{
+  color: #888;
+}
+.add{
+  border: 1px solid #888;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 2px;
+  color: #000;
+  background: #fff;
+  padding: 2%;
+}
+.add:hover{
+  background: #999;
   color: #fff;
+  border: 1px solid #999;
 }
 h2{
   margin: 0 auto;
@@ -106,7 +134,7 @@ header{
   background-color: $header;
   color: rgba(46, 49, 146, .6);
 }
-#logo-wrap{
+#logo_wrap{
   background: rgba(0, 0, 0, 0) url("../images/logo.png") no-repeat scroll 0 0 / contain ;
   float: left;
   margin: 3% 4% 0;
@@ -115,8 +143,7 @@ header{
 }
 /* nav styles */
 .global-nav-wrap, .logged-in-global-nav-wrap,
-.utility-nav-wrap, .logged-in-utility-nav-wrap
-.login-sign-up{
+.logged-in-utility-nav-wrap, .login-sign-up{
   display: none;
 }
 span.menu{
@@ -769,55 +796,58 @@ MEDIA QUERIES
 }
 /***desktop styles***/
 @media only screen and (min-width:769px){
-  header{
-    height: 100px;
+  /*TODO: SHOW LOGGED IN HEADER WHEN USER IS LOGGED IN*/
+  .logged-in-header{
+    height: 120px;
   }
-  #logo-wrap{
-    height: 50px;
+  .header{
+    height: 90px;
+  }
+  #logo_wrap{
+    height: 60px;
     width: 23%;
     margin-top: 1.2%;
-    margin-left: 2%;
+    margin-left: 1.5%;
   }
   #menu-btn, #menu-btn-footer{
     display: none;
   }
   .global-nav-wrap,.logged-in-global-nav-wrap,
-  .utility-nav-wrap, .logged-in-utility-nav-wrap
-  .login-sign-up{
+  .logged-in-utility-nav-wrap, .login-sign-up{
     display: block;
     text-transform: capitalize;
     float: left;
     margin-left: 2%;
     margin-top: .5%;
   }
-  #utility_nav, #logged_in_utility_nav{
+  #logged_in_utility_nav{
     width: 60%;
+    margin: 0 auto;
     height: auto;
     float: right;
     padding: 0.3%;
   }
-  .utility-nav-wrap, .logged-in-utility-nav-wrap{
-    background-color: $utility_nav;
-    width: 100%;
+  .logged-in-utility-nav-wrap{
+    width: 60%;
     height: 30px;
     margin: 0 auto;
+    margin-top: .3%;
   }
   .utility-nav-li{
     float: left;
     text-align: center;
-    padding-right: 3%;
+    padding-right: 2%;
   }
-  .header-utility-nav-login{
-    padding-right: 0;
+  #global_nav{
+    margin-top: 2.5%;
   }
-  .header-utility-nav-register{
-    width: 19%;
+  #logged_in_global_nav{
+    margin-top: 1.8%;
   }
   #global_nav, #logged_in_global_nav{
-    width: 84%;
+    width: 90%;
     height: auto;
     float: right;
-    margin-top: 2.5%;
     font-size: 1.5em;
   }
   .global-nav-wrap, .logged-in-global-nav-wrap{
@@ -881,7 +911,6 @@ MEDIA QUERIES
   }
   #icon-cta{
     height: 330px;
-    background-color: $accent2;
     padding: 3.5%;
   }
   #icon-cta h2{

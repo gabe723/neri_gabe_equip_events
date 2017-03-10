@@ -23,18 +23,14 @@ security_check();
   <div class="site-container">
     <div class="hero hero-<?php echo $page; ?>">
       <div class="header-wrap">
-        <header id="page_header" role="header">
-          <?php
-          if ( defined('USER_ID') ) {
-            include_once ('logged-in-utility-nav.php');
-          }
-          ?>
+        <header id="page_header" class="header logged-in-header" role="header">
           <a href="http://localhost/neri_gabe_equip_events/index.php" class="equip-events" title="Equip Events">
-            <div id="logo-wrap">
+            <div id="logo_wrap">
               <h1>Equip Events</h1>
             </div></a>
             <?php
             if (  defined('USER_ID') ) {
+              include_once ('logged-in-utility-nav.php');
               include_once ('logged-in-global-nav.php');
             }else{
               include_once ('global-nav.php');

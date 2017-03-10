@@ -61,7 +61,7 @@ include_once('header.php');
               </article>
               <?php }//end while ?>
             </section>
-            <a href="#"><p>Back to Top</p></a>
+            <a href="#"><p class="back-to-top">Back to Top</p></a>
           </section>
           <?php
         }
